@@ -39,7 +39,7 @@ URL del proyecto:      https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea_2.git
 - Para descargar el proyecto:
 	- Ubicarse dentro de la carpeta sobre la cual pretende descargar el proyecto
 	- Con el click derecho del mouse, haga click sobre la opcion: Click Bash Here.
-	- En la consola de git digitar el siguiente comando   git pull https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea_2.git
+	- En la consola de git digitar el siguiente comando   git pull https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea3.git
 	- Abrir la consola de comandos, ubicarse sobre la carpeta deonde realizo la descarga del proyecto
 	- Ejecutar el comnando   mvn package
 	- Desde consoola, Ubicarse en el directorio target/classes/ y ejecutar el comando   java co.com.andes.homework.three.principal.App
