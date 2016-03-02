@@ -24,7 +24,6 @@ import java.text.DecimalFormat;
 public class BusinessMathOperation{
     
     static final int proxy = 386;
-    DecimalFormat format = new DecimalFormat("#.######");
     
     /**
      * Metodo que suma todos los datos numericos de una columna

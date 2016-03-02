@@ -26,7 +26,8 @@ public class BusinessDelegate {
     BusinessMathOperation busMath = new BusinessMathOperation();
     
     /**
-     * 
+     * Metodo que realiza la distincion de las columnas de la matriz de double
+     * y sobre cada pareja de columnas se realizan los calculos de promedio, sumatorias
      * @param colX
      * @param colY
      * @param matrixRes
@@ -48,7 +49,8 @@ public class BusinessDelegate {
     }
     
     /**
-     * 
+     * Metodo que invoca los llamados a las operaciones matematicas que calculan los ceficientes
+     * por cada pareja se arma un objeto VO
      * @param numRows
      * @param operVO 
      */
@@ -62,7 +64,9 @@ public class BusinessDelegate {
         resVO.setCoeffRxy(busMath.calculateCoeffRxy(numRows, operVO.getxMulty(), operVO.getSumX(), 
                 operVO.getSumY(), operVO.getSumXPow2(), operVO.getSumYPow2()));
         
-        resVO.setBetaZero(busMath.calculateBeta0(operVO.getSumY(), resVO.getBetaOne(), operVO.getSumX()));
+        resVO.setCoeffRPow(Math.pow(resVO.getCoeffRxy(),2));
+        
+        resVO.setBetaZero(busMath.calculateBeta0(operVO.getAverageY(), resVO.getBetaOne(), operVO.getAverageX()));
         
         resVO.setCoeffYk(busMath.calculateYk(resVO.getBetaZero(), resVO.getBetaOne()));
         
