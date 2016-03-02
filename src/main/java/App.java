@@ -50,18 +50,14 @@ public class App
             appExecute.processOperateAns();
                         
             get("/calculate", (req, res) -> 
-                   "<table>"
-                    + "<tr>"
-                        + "<td><strong>Curso</strong></td>"
-                        + "<td><strong>Horas</strong></td>"
-                        + "<td><strong>Horario</strong></td>"
-                    + "</tr>"
-                    + "<tr>"
-                        + "<td>CSS</td>"
-                        + "<td>20</td>"
-                        + "<td>16:00 - 20:00</td>"
-                    + "</tr>"
-                    + "</table>"
+                "<table>"
+                    + "<tr>"+ "<td colspan 6><strong>ExpectedValues</strong></td>"+ "</tr>"
+                    + "<tr>"+ "<td>Test</td>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
+                    + "<tr>"+ "<td>Test1</td>"+ "<td>-22.55</td>"+ "<td>1.7279 </td>"+ "<td>0.9545</td>"+ "<td>0.9111</td>"+ "<td>644.429</td>"+ "</tr>"
+                    + "<tr>"+ "<td>Test2</td>"+ "<td>-4.035</td>"+ "<td>0.1681</td>"+ "<td>0.9333</td>"+ "<td>0.8711</td>"+ "<td>60.858 </td>"+ "</tr>"
+                    + "<tr>"+ "<td>Test3</td>"+ "<td>-23.92</td>"+ "<td>1.43097</td>"+ "<td>0.9631</td>"+ "<td>0.9276</td>"+ "<td>528.4294</td>"+ "</tr>"
+                    + "<tr>"+ "<td>Test3</td>"+ "<td>-4.604</td>"+ "<td>0.140164</td>"+ "<td>0.9480</td>"+ "<td>0.8988</td>"+ "<td>49.4994</td>"+ "</tr>"
+                + "</table>"
             );
             
         } catch (BusinessException | IOException | URISyntaxException e) {
