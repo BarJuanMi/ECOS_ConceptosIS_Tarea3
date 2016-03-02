@@ -53,7 +53,7 @@ public class App
                 "<div { text-align: center; }"    
                 + "<div >"
                     + "<table border=\"1\">"
-                        + "<tr>"+ "<td colspan 6><strong>ExpectedValues</strong></td>"+ "</tr>"
+                        + "<tr>"+ "<td colspan =\"6\"><strong>ExpectedValues</strong></td>"+ "</tr>"
                         + "<tr>"+ "<td scope=\"col\">Test</td>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
                         + "<tr>"+ "<td scope=\"col\">Test1</td>"+ "<td>-22.55</td>"+ "<td>1.7279 </td>"+ "<td>0.9545</td>"+ "<td>0.9111</td>"+ "<td>644.429</td>"+ "</tr>"
                         + "<tr>"+ "<td scope=\"col\">Test2</td>"+ "<td>-4.035</td>"+ "<td>0.1681</td>"+ "<td>0.9333</td>"+ "<td>0.8711</td>"+ "<td>60.858 </td>"+ "</tr>"
