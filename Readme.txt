@@ -6,6 +6,7 @@ Estructura del proyecto maven
 |___ src
 ||___ main
 |||___ java
+||||___ App.java
 ||||___ co
 |||||___ com
 ||||||___ andes
@@ -17,8 +18,6 @@ Estructura del proyecto maven
 ||||||||||___ ReadDataFile.java
 |||||||||___ exception
 ||||||||||___ BusinessException.java
-|||||||||___ principal
-||||||||||___ App.java
 |||||||||___ validation
 ||||||||||___ ValidationObject.java
 |||||||||___ vo
@@ -34,7 +33,7 @@ Estructura del proyecto maven
 |||||||||___ business
 |||||||||___ BusinessMathOperationTest.java
 
-URL del proyecto:      https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea_2.git
+URL del proyecto:      https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea3.git
 
 - Para descargar el proyecto:
 	- Ubicarse dentro de la carpeta sobre la cual pretende descargar el proyecto
@@ -42,8 +41,8 @@ URL del proyecto:      https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea_2.git
 	- En la consola de git digitar el siguiente comando   git pull https://github.com/BarJuanMi/ECOS_ConceptosIS_Tarea3.git
 	- Abrir la consola de comandos, ubicarse sobre la carpeta deonde realizo la descarga del proyecto
 	- Ejecutar el comnando   mvn package
-	- Desde consoola, Ubicarse en el directorio target/classes/ y ejecutar el comando   java co.com.andes.homework.three.principal.App
+	- No es posible que la aplicacion se ejecute desde consola, dada la estructura del main quien ejecuta una interaccion con heroku.
 
-- Ejecucion
-	- Sobre la consola introduzca la ruta para ser iniciado el conteo
-	- Los errores y resultados seran visualizados mediante la consola de comandos
+- Ejecucion heroku
+	- https://nameless-fortress-17372.herokuapp.com/calculate
+	- 

@@ -78,7 +78,7 @@ public class App
             );
             
         } catch (BusinessException | IOException | URISyntaxException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Ocurrio un error, recuerde que esta aplicacion puede ser consumida desde heroku: https://nameless-fortress-17372.herokuapp.com/calculate +");
         }
     }
     
