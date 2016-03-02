@@ -50,28 +50,19 @@ public class App
             appExecute.processOperateAns();
                         
             get("/calculate", (req, res) -> 
-                    "|---------------------------------------------------------------|"+"\n"
-                  + "|   Test   |             Expected  Values                       |"+"\n"
-                  + "|---------------------------------------------------------------|"+"\n"
-                  + "|          |   B0   |   B1       |   rx,y   |   r2   |   yk     |"+"\n"
-                  + "|---------------------------------------------------------------|"+"\n"
-                  + "|   Test1  | -22.55 |  1.7279    |  0.9545  | 0.9111 | 644.429  |"+"\n"
-                  + "|   Test2  | -4.035 |  0.1681    |  0.9333  | 0.8711 | 60.858   |"+"\n"
-                  + "|   Test3  | -23.92 |  1.43097   |  0.9631  | 0.9276 | 528.4294 |"+"\n"
-                  + "|   Test4  | -4.604 |  0.140164  |  0.9480  | 0.8988 | 49.4994  |"+"\n"
-                  + "\n"
-                  + "\n"
-                  + "|-----------------------------------------------------------------------------------|"+"\n"
-                  + "|                                  Actual  Values                                   |"+"\n"
-                  + "|-----------------------------------------------------------------------------------|"+"\n"
-                  + "|       B0     |        B1       |       rx,y      |       r2     |        yk       |"+"\n"
-                  + "|-----------------------------------------------------------------------------------|"+"\n"
-                  + "|"+listResult.get(0).getBetaZero()+" | "+listResult.get(0).getBetaOne()+" | "+listResult.get(0).getCoeffRxy()+" | "+Math.pow(listResult.get(0).getBetaZero(),2)+" | "+listResult.get(0).getCoeffYk()+" |"+"\n"
-                  + "|"+listResult.get(1).getBetaZero()+" | "+listResult.get(1).getBetaOne()+" | "+listResult.get(1).getCoeffRxy()+" | "+Math.pow(listResult.get(1).getBetaZero(),2)+" | "+listResult.get(1).getCoeffYk()+" |"+"\n"
-                  + "|"+listResult.get(2).getBetaZero()+" | "+listResult.get(2).getBetaOne()+" | "+listResult.get(2).getCoeffRxy()+" | "+Math.pow(listResult.get(2).getBetaZero(),2)+" | "+listResult.get(2).getCoeffYk()+" |"+"\n"
-                  + "|"+listResult.get(3).getBetaZero()+" | "+listResult.get(3).getBetaOne()+" | "+listResult.get(3).getCoeffRxy()+" | "+Math.pow(listResult.get(3).getBetaZero(),2)+" | "+listResult.get(3).getCoeffYk()+" |"+"\n"
+                   "<table>"
+                    + "<tr>"
+                        + "<td><strong>Curso</strong></td>"
+                        + "<td><strong>Horas</strong></td>"
+                        + "<td><strong>Horario</strong></td>"
+                    + "</tr>"
+                    + "<tr>"
+                        + "<td>CSS</td>"
+                        + "<td>20</td>"
+                        + "<td>16:00 - 20:00</td>"
+                    + "</tr>"
+                    + "</table>"
             );
-            
             
         } catch (BusinessException | IOException | URISyntaxException e) {
             System.out.println(e.getMessage());
