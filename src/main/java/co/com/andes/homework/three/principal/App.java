@@ -50,7 +50,7 @@ public class App
             appExecute.readFile();
             appExecute.processOperateAns();
                         
-            get("/calculate", (req, res) -> "Hola Juan M");
+            get("/hello", (req, res) -> "Hola Juan M");
             
             
         } catch (BusinessException | IOException | URISyntaxException e) {
