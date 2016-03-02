@@ -51,7 +51,7 @@ public class App
                         
             get("/calculate", (req, res) ->
                 "<div { text-align: center; }"    
-                + "<div >"
+                + "<div align=\"center\">"
                     + "<table border=\"1\">"
                         + "<tr>"+ "<td colspan =\"6\"><strong>ExpectedValues</strong></td>"+ "</tr>"
                         + "<tr>"+ "<td scope=\"col\">Test</td>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
