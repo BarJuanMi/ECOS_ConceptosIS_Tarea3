@@ -8,7 +8,6 @@
  * información confidencial y deberá utilizarlo sólo conforme a los 
  * términos del acuerdo de licencia que ha firmado con Tigo Une.
  */
-package co.com.andes.homework.three.principal;
 
 import co.com.andes.homework.three.validation.ValidationObject;
 import co.com.andes.homework.three.business.ReadDataFile;
