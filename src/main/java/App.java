@@ -41,20 +41,20 @@ public class App
      * @param args 
      */
     public static void main( String[] args ) {
-        //try {
+        try {
             port(Integer.valueOf(System.getenv("PORT")));
             staticFileLocation("/public");
 
-//            App appExecute = new App();
-//            appExecute.readFile();
-//            appExecute.processOperateAns();
+            App appExecute = new App();
+            appExecute.readFile();
+            appExecute.processOperateAns();
                         
             get("/hello", (req, res) -> "Hola Juan M");
             
             
-//        } catch (BusinessException | IOException | URISyntaxException e) {
-//            System.out.println(e.getMessage());
-//        }
+        } catch (BusinessException | IOException | URISyntaxException e) {
+            System.out.println(e.getMessage());
+        }
     }
     
     /**
