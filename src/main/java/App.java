@@ -50,17 +50,31 @@ public class App
             appExecute.processOperateAns();
                         
             get("/calculate", (req, res) ->
-                "<div { text-align: center; }"    
-                + "<div text-align=\"center\">"
-                    + "<table border=\"1\">"
-                        + "<tr>"+ "<td colspan =\"6\"><strong>ExpectedValues</strong></td>"+ "</tr>"
-                        + "<tr>"+ "<td scope=\"col\">Test</td>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
-                        + "<tr>"+ "<td scope=\"col\">Test1</td>"+ "<td>-22.55</td>"+ "<td>1.7279 </td>"+ "<td>0.9545</td>"+ "<td>0.9111</td>"+ "<td>644.429</td>"+ "</tr>"
-                        + "<tr>"+ "<td scope=\"col\">Test2</td>"+ "<td>-4.035</td>"+ "<td>0.1681</td>"+ "<td>0.9333</td>"+ "<td>0.8711</td>"+ "<td>60.858 </td>"+ "</tr>"
-                        + "<tr>"+ "<td scope=\"col\">Test3</td>"+ "<td>-23.92</td>"+ "<td>1.43097</td>"+ "<td>0.9631</td>"+ "<td>0.9276</td>"+ "<td>528.4294</td>"+ "</tr>"
-                        + "<tr>"+ "<td scope=\"col\">Test4</td>"+ "<td>-4.604</td>"+ "<td>0.140164</td>"+ "<td>0.9480</td>"+ "<td>0.8988</td>"+ "<td>49.4994</td>"+ "</tr>"
-                    + "</table>"
-                + "</div>"
+                "<table>"
+                   + "<tr>"
+                       + "<td>"
+                           + "<table border=\"1\">"
+                                + "<tr>"+ "<td colspan =\"6\"><strong>Expected Values</strong></td>"+ "</tr>"
+                                + "<tr>"+ "<td scope=\"col\">Test</td>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
+                                + "<tr>"+ "<td scope=\"col\">Test1</td>"+ "<td>-22.55</td>"+ "<td>1.7279 </td>"+ "<td>0.9545</td>"+ "<td>0.9111</td>"+ "<td>644.429</td>"+ "</tr>"
+                                + "<tr>"+ "<td scope=\"col\">Test2</td>"+ "<td>-4.035</td>"+ "<td>0.1681</td>"+ "<td>0.9333</td>"+ "<td>0.8711</td>"+ "<td>60.858 </td>"+ "</tr>"
+                                + "<tr>"+ "<td scope=\"col\">Test3</td>"+ "<td>-23.92</td>"+ "<td>1.43097</td>"+ "<td>0.9631</td>"+ "<td>0.9276</td>"+ "<td>528.4294</td>"+ "</tr>"
+                                + "<tr>"+ "<td scope=\"col\">Test4</td>"+ "<td>-4.604</td>"+ "<td>0.140164</td>"+ "<td>0.9480</td>"+ "<td>0.8988</td>"+ "<td>49.4994</td>"+ "</tr>"
+                            + "</table>"
+                       + "</td>"
+            
+                       + "<td>"
+                            + "<table border=\"1\">"
+                                + "<tr>"+ "<td colspan =\"6\"><strong>Actual Values</strong></td>"+ "</tr>"
+                                + "<tr>"+ "<td>B0</td>"+ "<td>B1</td>"+ "<td>rx,y</td>"+ "<td>r2</td>"+ "<td>yk</td>"+ "</tr>"
+                                + "<tr>"+ "<td>"+ listResult.get(0).getBetaZero() +"</td>"+ "<td>"+ listResult.get(0).getBetaOne() +"</td>"+ "<td>"+ listResult.get(0).getCoeffRxy() +"</td>"+ "<td>"+ listResult.get(0).getCoeffRPow() +"</td>"+ "<td>"+ listResult.get(0).getCoeffYk() +"</td>"+ "</tr>"
+                                + "<tr>"+ "<td>"+ listResult.get(1).getBetaZero() +"</td>"+ "<td>"+ listResult.get(1).getBetaOne() +"</td>"+ "<td>"+ listResult.get(1).getCoeffRxy() +"</td>"+ "<td>"+ listResult.get(1).getCoeffRPow() +"</td>"+ "<td>"+ listResult.get(1).getCoeffYk() +"</td>"+ "</tr>"
+                                + "<tr>"+ "<td>"+ listResult.get(2).getBetaZero() +"</td>"+ "<td>"+ listResult.get(2).getBetaOne() +"</td>"+ "<td>"+ listResult.get(2).getCoeffRxy() +"</td>"+ "<td>"+ listResult.get(2).getCoeffRPow() +"</td>"+ "<td>"+ listResult.get(2).getCoeffYk() +"</td>"+ "</tr>"
+                                + "<tr>"+ "<td>"+ listResult.get(3).getBetaZero() +"</td>"+ "<td>"+ listResult.get(3).getBetaOne() +"</td>"+ "<td>"+ listResult.get(3).getCoeffRxy() +"</td>"+ "<td>"+ listResult.get(3).getCoeffRPow() +"</td>"+ "<td>"+ listResult.get(3).getCoeffYk() +"</td>"+ "</tr>"
+                            + "</table>"
+                       + "</td>"
+                   + "</tr>"
+                + "</table>"
             );
             
         } catch (BusinessException | IOException | URISyntaxException e) {
