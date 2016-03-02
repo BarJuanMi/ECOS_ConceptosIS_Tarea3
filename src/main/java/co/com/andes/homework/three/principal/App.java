@@ -46,15 +46,15 @@ public class App
             port(Integer.valueOf(System.getenv("PORT")));
             staticFileLocation("/public");
 
-            App appExecute = new App();
-            appExecute.readFile();
-            appExecute.processOperateAns();
+//            App appExecute = new App();
+//            appExecute.readFile();
+//            appExecute.processOperateAns();
                         
             get("/hello", (req, res) -> "Hola Juan M");
             
             
         } catch (BusinessException | IOException | URISyntaxException e) {
-            e.getMessage();
+            System.out.println(e.getMessage());
         }
     }
     
